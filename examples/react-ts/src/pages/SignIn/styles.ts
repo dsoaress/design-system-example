@@ -11,9 +11,12 @@ export const Wrapper = styled('div', {
 export const Form = styled('form', {
   display: 'flex',
   flexDirection: 'column',
-  width: '480px',
+  width: '500px',
   gap: '1.5rem',
-  borderRadius: theme.radii.default
+  marginTop: '-4rem',
+  padding: '2rem',
+  borderRadius: theme.radii.default,
+  boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'
 })
 
 export const SocialLinks = styled('div', {
