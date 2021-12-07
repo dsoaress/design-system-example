@@ -1,7 +1,8 @@
 import { Button, Input } from 'lib'
+import { AiOutlineUser } from 'react-icons/ai'
 import { BsBoxArrowRight } from 'react-icons/bs'
 import { FcGoogle } from 'react-icons/fc'
-import { RiFacebookBoxFill } from 'react-icons/ri'
+import { RiFacebookBoxFill, RiLockPasswordLine } from 'react-icons/ri'
 
 import { FacebookButton, Form, SocialLinks, Wrapper } from './styles'
 
@@ -11,8 +12,13 @@ export function SignIn() {
       <Form>
         <h1>Sign In</h1>
 
-        <Input type="email" label="Email" placeholder="Your email address" />
-        <Input type="password" label="Password" placeholder="Your password" />
+        <Input type="email" label="Email" placeholder="Your email address" icon={AiOutlineUser} />
+        <Input
+          type="password"
+          label="Password"
+          placeholder="Your password"
+          icon={RiLockPasswordLine}
+        />
 
         <Button label="Sign in" rightIcon={BsBoxArrowRight} />
 
