@@ -1,0 +1,16 @@
+{
+  "name": "design-system-example",
+  "version": "0.0.1",
+  "author": "Daniel Soares <daniel.soares@me.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "workspaces": ["lib", "examples/*"],
+  "scripts": {
+    "build:lib": "yarn workspace lib build",
+    "build:react-js": "yarn workspace react-js build",
+    "build:react-ts": "yarn workspace react-ts build",
+    "start:react-js": "yarn workspace react-js start",
+    "start:react-ts": "yarn workspace react-ts start",
+    "postinstall": "yarn build:lib"
+  }
+}

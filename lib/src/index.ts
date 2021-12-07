@@ -1,0 +1,6 @@
+export type { ButtonProps } from './components/Button'
+export { Button } from './components/Button'
+export type { InputProps } from './components/Input'
+export { Input } from './components/Input'
+export { globalStyles } from './styles/globals'
+export { keyframes, styled, theme } from './styles/stitches.config'
